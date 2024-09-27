@@ -11,6 +11,8 @@ import java.util.List;
  */
 public class InLabByHandTranslator implements Translator {
     public static final String CANADA = "can";
+    public static final int FOUR = 4;
+    public static final int THREE = 3;
 
     /**
      * Returns the language abbreviations for all languages whose translations are
@@ -61,10 +63,10 @@ public class InLabByHandTranslator implements Translator {
                 idx = 2;
             }
             else if ("es".equals(language)) {
-                idx = 3;
+                idx = THREE;
             }
             else if ("fr".equals(language)) {
-                idx = 4;
+                idx = FOUR;
             }
         }
 
