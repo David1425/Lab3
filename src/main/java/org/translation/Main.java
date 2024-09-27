@@ -71,13 +71,7 @@ public class Main {
         Collections.sort(countries);
         for (int i = 0; i < countries.size(); i++) {
             String country = countries.get(i);
-            System.out.print(country);
-            if (i != countries.size() - 1) {
-                System.out.print(" ");
-            }
-            else {
-                System.out.println();
-            }
+            System.out.println(country);
         }
 
         System.out.println("select a country from above:");
@@ -99,13 +93,7 @@ public class Main {
         Collections.sort(languages);
         for (int i = 0; i < languages.size(); i++) {
             String language = languages.get(i);
-            System.out.print(language);
-            if (i != languages.size() - 1) {
-                System.out.print(" ");
-            }
-            else {
-                System.out.println();
-            }
+            System.out.println(language);
         }
 
         System.out.println("select a language from above:");
