@@ -11,9 +11,8 @@ import java.util.*;
  */
 public class CountryCodeConverter {
 
-    // TODO Task: pick appropriate instance variable(s) to store the data necessary for this class
-    private Map<String, String> countryCodes = new HashMap<>();
-    private Map<String, String> countryNames = new HashMap<>();
+    private Map<String, String> countryCodes;
+    private Map<String, String> countryNames;
 
     /**
      * Default constructor which will load the country codes from "country-codes.txt"
@@ -29,7 +28,8 @@ public class CountryCodeConverter {
      * @throws RuntimeException if the resource file can't be loaded properly
      */
     public CountryCodeConverter(String filename) {
-
+        countryCodes = new HashMap<>();
+        countryNames = new HashMap<>();
         try {
             List<String> lines = Files.readAllLines(Paths.get(getClass()
                     .getClassLoader().getResource(filename).toURI()));
