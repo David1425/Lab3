@@ -69,7 +69,16 @@ public class Main {
             countries.set(i, converter.fromCountryCode(code));
         }
         Collections.sort(countries);
-        System.out.println(countries);
+        for (int i = 0; i < countries.size(); i++) {
+            String country = countries.get(i);
+            System.out.print(country);
+            if (i != countries.size() - 1) {
+                System.out.print(" ");
+            }
+            else {
+                System.out.println();
+            }
+        }
 
         System.out.println("select a country from above:");
 
@@ -88,7 +97,16 @@ public class Main {
             languages.set(i, converter.fromLanguageCode(code));
         }
         Collections.sort(languages);
-        System.out.println(languages);
+        for (int i = 0; i < languages.size(); i++) {
+            String language = languages.get(i);
+            System.out.print(language);
+            if (i != languages.size() - 1) {
+                System.out.print(" ");
+            }
+            else {
+                System.out.println();
+            }
+        }
 
         System.out.println("select a language from above:");
 
